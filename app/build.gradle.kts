@@ -52,10 +52,17 @@ android {
 dependencies {
 
     implementation(libs.androidx.core.ktx)
-    implementation(libs.androidx.lifecycle.runtime.ktx)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 
-    implementation(libs.androidx.ui.constraintlayout)
+    implementation(libs.ui.constraintlayout)
+    implementation(libs.ui.activity)
+    implementation(libs.ui.fragment)
+    implementation(libs.ui.appcompat)
+    implementation(libs.ui.material)
+    implementation(libs.lifecycle.runtime)
+    implementation(libs.lifecycle.viewmodel)
+
+    implementation(libs.okhttp)
 }
