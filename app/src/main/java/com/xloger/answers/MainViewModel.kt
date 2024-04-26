@@ -20,7 +20,7 @@ class MainViewModel : ViewModel() {
         viewModelScope.launch {
             _uiState.update { it.copy(question = question, answer = "") }
             val result = chatRepository.chat(question)
-            _uiState.update { it.copy(answer = result) }
+            _uiState.update { it.copy(answer = result!!.choices.first().message.content) }
         }
     }
 }

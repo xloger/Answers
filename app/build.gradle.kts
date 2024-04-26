@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
+    alias(libs.plugins.kotlin.seralization)
 }
 
 android {
@@ -65,4 +66,5 @@ dependencies {
     implementation(libs.lifecycle.viewmodel)
 
     implementation(libs.okhttp)
+    implementation(libs.kotlin.serialization)
 }

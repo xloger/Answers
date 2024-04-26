@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun initView() {
         binding.submitBtn.setOnClickListener {
-            viewmodel.requestQuestion("What is the meaning of life?")
+            viewmodel.requestQuestion(binding.questionEditText.text.toString())
         }
         lifecycleScope.launch {
             repeatOnLifecycle(Lifecycle.State.RESUMED) {

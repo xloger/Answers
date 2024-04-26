@@ -24,8 +24,10 @@ lifecycle-runtime = { group = "androidx.lifecycle", name = "lifecycle-runtime-kt
 lifecycle-viewmodel = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycle" }
 
 okhttp = { group = "com.squareup.okhttp3", name = "okhttp", version = "4.12.0" }
+kotlin-serialization = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version = "1.6.3" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
 jetbrainsKotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-seralization = { id = "org.jetbrains.kotlin.plugin.serialization", version = "1.9.22" }
 
